@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "transpile": "npm install && babel src --out-dir dist",
-    "start": "npm run transpile && babel-node ./dist/src/index.js --modo=CLUSTER",
+    "start": "npm run transpile && node ./dist/index.js --modo=CLUSTER",
     "babel-node": "babel-node --presets=@babel/preset-env",
     "dev": "nodemon --exec npm run babel-node src/index.js",
     "puerto": "npm run transpile && node dist/index.js --puerto=3000",
