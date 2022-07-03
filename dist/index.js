@@ -36,7 +36,7 @@ var optionalArgsObject = {
   }
 };
 var args = (0, _minimist["default"])(process.argv.slice(2), optionalArgsObject);
-var PORT = args.puerto || 8080;
+var PORT = args.puerto || process.env.PORT;
 exports.PORT = PORT;
 var modoCluster = args.modo === 'CLUSTER';
 
