@@ -21,7 +21,7 @@ const optionalArgsObject = {
 };
 const args = minimist(process.argv.slice(2), optionalArgsObject);
 
-export const PORT = args.puerto || 3000;
+export const PORT = args.puerto || 8080;
 const modoCluster = args.modo === 'CLUSTER'
 
 
